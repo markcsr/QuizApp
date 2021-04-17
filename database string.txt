@@ -1,0 +1,1 @@
+mongodb+srv://adwait:adwait@cluster0.bh8xc.mongodb.net/quizzapp?retryWrites=true&w=majority

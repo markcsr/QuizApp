@@ -1,0 +1,108 @@
+.carousel {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+}
+
+.carousel .carousel__item, .carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions {
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  margin-top: 20px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-right: 10px;
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 50px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.carousel .carousel__item p {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+.center-index {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-index h1 {
+  margin: 20px;
+}
+
+.box-index {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(187, 181, 181);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  background-color: rgb(204, 198, 198);
+}
+
+.carousel .carousel__item, .carousel .carousel__actions {
+  padding: 30px;
+}
+
+.bn-score {
+  cursor: default;
+}

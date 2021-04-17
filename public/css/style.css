@@ -1,0 +1,158 @@
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.links button {
+  background-color: #dfd9d9;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.links button:focus {
+  outline: transparent;
+}
+
+.links {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .center h1 {
+    font-size: 30px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(70, 68, 68);
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(70, 68, 68);
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: rgb(37, 116, 161);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* comming soon */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url("https://1.bp.blogspot.com/-LdkuKlZsR5w/WGYLIuC6kVI/AAAAAAAAKcw/vgnDqmrVBv8tUMA8AabWupPqzKcFNwO9ACLcB/s1600/Awesome%2BWallpapers%2B2.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
